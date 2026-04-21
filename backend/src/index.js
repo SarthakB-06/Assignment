@@ -13,7 +13,7 @@ const app = express();
 
 app.use(helmet());
 const apiLimiter = rateLimit({
-    windowMs: 15 * 60 * 1000, 
+    windowMs: 15 * 60 * 1000,
     max: 100,
     message: 'Too many requests from this IP, please try again after 15 minutes'
 });
@@ -22,7 +22,11 @@ app.use('/api/', apiLimiter);
 app.use(express.json());
 
 connectDB();
-app.use(cors());
+app.use(cors({
+    origin: "https://assignment-6v95.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}));
 
 app.use('/api/v1/auth', authRoutes)
 app.use('/api/v1/tasks', taskRoutes)
@@ -33,6 +37,6 @@ const PORT = process.env.PORT || 5000;
 
 
 
-app.listen(PORT, ()=> {
+app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 })

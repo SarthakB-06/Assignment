@@ -11,6 +11,11 @@ This is the backend API for TaskFlow, a simple and efficient task management app
 -   **Advanced Task Management**: Includes features like task status updates (pending, in-progress, completed), filtering, and pagination.
 -   **Security**: Implements password hashing with `bcryptjs`, and security headers with `helmet`.
 
+## Live Application
+
+-   **Frontend URL**: [https://assignment-6v95.vercel.app](https://assignment-6v95.vercel.app)
+-   **Backend API URL**: [https://assignment-hhz1.onrender.com](https://assignment-hhz1.onrender.com)
+
 ## Getting Started
 
 ### Prerequisites
