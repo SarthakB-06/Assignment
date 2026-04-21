@@ -49,6 +49,7 @@ A Postman collection is available ([TaskFlow_Final_Postman_Collection.postman_co
 -   **Auth**: `/api/v1/auth` (register, login, me)
 -   **Tasks**: `/api/v1/tasks` (CRUD operations)
 -   **Admin**: `/api/v1/admin` (user and task management)
+-   you can see the admin panel by logging with - Rahul@gmail.com (password : 123456)
 
 ---
 
