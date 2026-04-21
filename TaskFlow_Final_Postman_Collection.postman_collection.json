@@ -74,7 +74,7 @@
                 "header": [
                     {
                         "key": "Authorization",
-                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                        "value": "Bearer YOUR_ADMIN_JWT_TOKEN_HERE"
                     }
                 ],
                 "url": {
@@ -105,7 +105,7 @@
                     },
                     {
                         "key": "Authorization",
-                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                        "value": "Bearer YOUR_ADMIN_JWT_TOKEN_HERE"
                     }
                 ],
                 "body": {
@@ -140,7 +140,7 @@
                     },
                     {
                         "key": "Authorization",
-                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                        "value": "Bearer YOUR_ADMIN_JWT_TOKEN_HERE"
                     }
                 ],
                 "body": {
@@ -170,7 +170,7 @@
                 "header": [
                     {
                         "key": "Authorization",
-                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                        "value": "Bearer YOUR_ADMIN_JWT_TOKEN_HERE"
                     }
                 ],
                 "url": {
@@ -210,7 +210,7 @@
                     },
                     {
                         "key": "Authorization",
-                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                        "value": "Bearer YOUR_ADMIN_JWT_TOKEN_HERE"
                     }
                 ],
                 "body": {
@@ -241,7 +241,7 @@
                 "header": [
                     {
                         "key": "Authorization",
-                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                        "value": "Bearer YOUR_ADMIN_JWT_TOKEN_HERE"
                     }
                 ],
                 "url": {
@@ -268,7 +268,7 @@
                 "header": [
                     {
                         "key": "Authorization",
-                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                        "value": "Bearer YOUR_ADMIN_JWT_TOKEN_HERE"
                     }
                 ],
                 "url": {
@@ -295,7 +295,7 @@
                 "header": [
                     {
                         "key": "Authorization",
-                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                        "value": "Bearer YOUR_ADMIN_JWT_TOKEN_HERE"
                     }
                 ],
                 "url": {
@@ -360,7 +360,7 @@
                 "header": [
                     {
                         "key": "Authorization",
-                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                        "value": "Bearer YOUR_ADMIN_JWT_TOKEN_HERE"
                     }
                 ],
                 "url": {
