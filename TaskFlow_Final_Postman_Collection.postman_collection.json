@@ -1,0 +1,384 @@
+{
+    "info": {
+        "name": "TaskFlow API Final",
+        "description": "APIs to manage tasks and users",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Auth - Register",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"Sarthak\",\n  \"email\": \"sarthak@example.com\",\n  \"password\": \"password123\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/auth/register",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "auth",
+                        "register"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Auth - Login",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"email\": \"Rahul@gmail.com\",\n  \"password\": \"123456\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/auth/login",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "auth",
+                        "login"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Auth - Get Me",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/auth/me",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "auth",
+                        "me"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Auth - Update Profile",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"Sarthak Updated\",\n  \"password\": \"newpassword123\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/auth/me",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "auth",
+                        "me"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Tasks - Create",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"title\": \"Complete Final Project\",\n  \"description\": \"Finish the MERN stack assignment\",\n  \"status\": \"pending\",\n  \"priority\": \"high\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/tasks",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "tasks"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Tasks - Get All (User)",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/tasks?page=1&limit=10",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "tasks"
+                    ],
+                    "query": [
+                        {
+                            "key": "page",
+                            "value": "1"
+                        },
+                        {
+                            "key": "limit",
+                            "value": "10"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Tasks - Update",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"status\": \"completed\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/tasks/TASK_ID_HERE",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "tasks",
+                        "TASK_ID_HERE"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Tasks - Delete",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/tasks/TASK_ID_HERE",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "tasks",
+                        "TASK_ID_HERE"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Admin - Get All Users",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/admin/users",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "admin",
+                        "users"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Admin - Delete User",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/admin/user/USER_ID_HERE",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "admin",
+                        "user",
+                        "USER_ID_HERE"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Admin - Update User Role",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer YOUR_ADMIN_JWT_TOKEN_HERE"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"role\": \"admin\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/admin/user/USER_ID_HERE/role",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "admin",
+                        "user",
+                        "USER_ID_HERE",
+                        "role"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Admin - Get All Tasks",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTc5Y2ZkMjc4MjQ2NWIwZWFiMzk0YyIsImlhdCI6MTc3Njc4NzI3MSwiZXhwIjoxNzc5Mzc5MjcxfQ.kgqQKVyo1vfaTPhiXHnKnRmQQWrcxpnPrZ-Min_Tl14"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/admin/tasks",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "admin",
+                        "tasks"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
